@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ENG">
+    <head>
+         <!-- Title -->
+         <title>Survey Analysis</title>
+
+         <!-- Meta data -->
+         <meta name="author" content="Jake Bisson"/>
+         <meta name="description" content="Jake Bisson's website containing his assignments and labs for the SEG3125 course."/>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+         <!-- bootstrap -->
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+         <!-- Icons -->
+         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+         <!-- Fonts -->
+         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+         <!-- JavaScript Scripts -->
+    </head>
+    <body>
+        <div class="container">
+            <h1>Name</h1>
+            <ul>
+                <% for (var i=0; i<results[8].length; i++){ %>
+                    <li><%= results[8][i].name %> :  <%= results[8][i].count %></li>
+                <% } %>    
+            </ul>
+            <h1>Gender</h1> 
+            <ul>
+                <% for (var i=0; i<results[9].length; i++){ %>
+                    <li><%= results[9][i].gender %> :  <%= results[9][i].count %></li>
+                <% } %>    
+            </ul>
+            <h1>Age</h1>
+            <ul>
+                <% for (var i=0; i<results[0].length; i++){ %>
+                    <li><%= results[0][i].age %> :  <%= results[0][i].count %></li>
+                <% } %>    
+            </ul>
+            <h1>Question 1</h1>
+            <ul>
+                <% for (var i=0; i<results[1].length; i++){ %>
+                    <li><%= results[1][i].q1 %> :  <%= results[1][i].count %></li>
+                <% } %>    
+            </ul>
+            <h1>Question 2</h1>
+            <ul>
+                <% for (var i=0; i<results[2].length; i++){ %>
+                    <li><%= results[2][i].q2 %> :  <%= results[2][i].count %></li>
+                <% } %>    
+            </ul>
+            <h1>Question 3</h1>
+            <ul>
+                <% for (var i=0; i<results[3].length; i++){ %>
+                    <li><%= results[3][i].q3 %> :  <%= results[3][i].count %></li>
+                <% } %>    
+            </ul>
+            <h1>Question 4</h1>
+            <ul>
+                <% for (var i=0; i<results[4].length; i++){ %>
+                    <li><%= results[4][i].q4 %> :  <%= results[4][i].count %></li>
+                <% } %>    
+            </ul>
+            <h1>Question 5</h1>
+            <ul>
+                <% for (var i=0; i<results[5].length; i++){ %>
+                    <li><%= results[5][i].q5 %> :  <%= results[5][i].count %></li>
+                <% } %>    
+            </ul>
+            <h1>Question 6</h1>
+            <ul>
+                <% for (var i=0; i<results[6].length; i++){ %>
+                    <li><%= results[6][i].q6 %> :  <%= results[6][i].count %></li>
+                <% } %>    
+            </ul>
+            <h1>Comments</h1>
+            <ul>
+                <% for (var i=0; i<results[7].length; i++){ %>
+                    <li><%= results[7][i].comments %> :  <%= results[7][i].count %></li>
+                <% } %>    
+            </ul>
+        </div>
+    </body>
+</html>

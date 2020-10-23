@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ENG">
+    <head>
+        <!-- Title -->
+        <title>Apple Website Survey</title>
+
+        <!-- Meta data -->
+        <meta name="author" content="Jake Bisson"/>
+        <meta name="description" content="Jake Bisson's website containing his assignments and labs for the SEG3125 course."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="assets/css/lab6-style.css"/>
+        <!-- bootstrap -->    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>  
+        
+        <!-- Icons -->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <!-- JavaScript Scripts -->
+    </head>
+    <body>
+        <a class="text-left px-3 py-3" style="font-size: 18px;" href="../../../index.html">Back to home page</a>
+        <!-- New Bootstrap version of the survey -->
+        <!-- Survey -->
+        <div class="container-fluid w-100">
+            <p class="display-3 text-center"><i class="fab fa-apple mx-3"></i>Apple UI Survey</p>
+            <p class="text-center text-primary" style="font-size: 26px;"><a href="https://www.apple.com/" rel="noopener noreferrer" target="_blank" class="website-link">www.apple.com</a></p>
+            <div class="text-center">
+                <a href="https://www.apple.com/" rel="noopener noreferrer" target="_blank">
+                    <img src="assets/images/apple-website.PNG" alt="Apple Website" class="rounded h-25 w-50" id="appleImage"/>
+                </a>
+            </div>
+            <p class="display-4 text-center my-5" style="font-size: 30px;">Let us know what you think of Apple's website by taking the survey below</p>
+            <hr class="w-50"/>
+            <form class="w-50 mx-auto" method="post">
+                <!-- personal information -->
+                <div class="form-group my-5">
+                    <p class="lead text-primary" style="font-size: 25px;">Personal Information</p>
+                    <input type="text" id="name" class="form-control" name="name" placeholder="Full Name" required/></br>
+                    <input type="text" id="gender" class="form-control" name="gender" placeholder="Gender" required/><br/>
+                    <input type="number" id="age" min="1" max="125" class="form-control" name="age" placeholder="Age" required/>
+                </div>
+                <hr/>
+                <!-- Question #1-->
+                <div class="form-group my-5">
+                    <p class="lead text-primary" style="font-size: 25px;">Question 1</p>
+                    <p>Did you feel like the website was easy to navigate?</p>
+                    <input type="radio" id="q1-a1" name="q1" value="yes" required/>
+                    <label for="q1-a1">Yes</label><br/> 
+                    <input type="radio" id="q1-a2" name="q1" value="no" required/>
+                    <label for="q1-a2">No</label><br/> 
+                </div>
+                <hr/>
+                <!-- Question #2 -->
+                <div class="form-group my-5">
+                    <p class="lead text-primary" style="font-size: 25px;">Question 2</p>
+                    <p>Which product did you feel the website tried to sell you the most?</p> 
+                    <select id="q2-a1" class="form-control" name="q2" required>
+                        <option value="" selected disabled hidden>Select One</option>
+                        <option value="Mac / Macbook">Mac / MacBook</option>
+                        <option value="IPad">IPad</option>
+                        <option value="IPhone">IPhone</option>
+                        <option value="Watch">Watch</option>
+                        <option value="TV">TV</option>
+                        <option value="Airpods / Headphones">Airpods / Headphones</option>
+                    </select> 
+                </div>
+                <hr/>
+                <!-- Question #3 -->
+                <div class="form-group my-5">
+                    <p class="lead text-primary" style="font-size: 25px;">Question 3</p>
+                    <p>The website demonstrated: <br/><small>(Select all that apply)</small></p>
+                     <!-- radio buttons or checkboxes here -->
+                     <input type="checkbox" id="q3-a1" name="q3" value="Proper Functionality">
+                     <label for="q3-a1">Proper Functionality</label><br/>
+                     <input type="checkbox" id="q3-a2" name="q3" value="Consistency">
+                     <label for="q3-a2">Consistency</label><br/>
+                     <input type="checkbox" id="q3-a3" name="q3" value="Efficiency">
+                     <label for="q3-a3">Efficiency</label><br/>
+                     <input type="checkbox" id="q3-a4" name="q3" value="Usability">
+                     <label for="q3-a4">Usability</label><br/>
+                     <input type="checkbox" id="q3-a5" name="q3" value="Reliability">
+                     <label for="q3-a5">Reliability</label><br/>
+                     <input type="checkbox" id="q3-a6" names="q3" value="Security">
+                     <label for="q3-a6">Security</label><br/> 
+                </div>
+                <hr/>
+                <!--Question #4 -->
+                <div class="form-group my-5">
+                    <p class="lead text-primary" style="font-size: 25px;">Question 4</p>
+                    <p>What was the most appealing part of the website?</p> 
+                    <input type="text" id="q4-a1" class="form-control" name="q4" placeholder="Your answer" required/><br/>
+                </div>
+                <hr/>
+                <!-- Question #5 -->
+                <div class="form-group my-5">
+                    <p class="lead text-primary" style="font-size: 25px;">Question 5</p>
+                    <p>How would you define the usability of the website?</p> 
+                    <input type="radio" id="q5-a1" name="q5" value="Very easy to use" required/>
+                    <label for="q5-a1">Very easy to use</label><br/>
+                    <input type="radio" id="q5-a2" name="q5" value="Easy to use" required/>
+                    <label for="q5-a2">Easy to use</label><br/>
+                    <input type="radio" id="q5-a3" name="q5" value="Hard to use" required/>
+                    <label for="q5-a3">Hard to use</label><br/>
+                    <input type="radio" id="q5-a4" name="q5" value="Very hard to use" required/>
+                    <label for="q5-a4">Very hard to use</label><br/>
+                </div>
+                <hr/>
+                <!-- Question #6 -->
+                <div class="form-group my-5">
+                    <p class="lead text-primary" style="font-size: 25px;">Question 6</p>
+                    <p>What is one thing that can be done to improve the website?</p>
+                    <input type="text" id="q6-a1" class="form-control" name="q6" placeholder="Your answer" required/><br/> 
+                </div>
+                <hr/>
+                <!--Comments-->
+                <div class="form-group my-5">
+                    <p class="lead text-primary" style="font-size: 25px;">Comments</p>
+                    <textarea name="comments" class="form-control" rows="5" placeholder="Comments"></textarea>
+                </div>
+                <!-- submit button -->
+                <button id="submitButton" type="submit" class="btn btn-lg py-4 btn-primary w-100">Submit Form</button>
+            </form>
+        </div>
+        <!-- Page Footer -->
+        <footer class="text-center my-5">
+            Website designed and developped by: Jake Bisson
+        </footer>
+
+        <script src="assets/action.js"></script>
+    </body>
+</html>
